@@ -1,0 +1,6 @@
+States: q0 q1 q2 q3 q4            
+Alphabet: 1                       
+Tape_alphabet: 1 0 X                       
+Start_state: q0                           
+Accepting_State: q4                
+Transitions: (q0,1,0,q1,1,1,R,R)  (q0,X,0,q4,0,0,R,S) (q1,1,0,q1,1,1,R,R) (q1,X,0,q2,X,0,L,S) (q1,0,0,q2,0,0,L,S) (q2,1,0,q3,X,0,L,S) (q3,1,0,q3,1,0,L,S) (q3,0,0,q0,0,0,R,S)
