@@ -1,3 +1,3 @@
-To run the simulation run python3 sim.py in termainl to start the simulator.
+To run launch the simulation, run python3 sim.py while in the Simulation directory to start the program.
   
-Then enter unary inputs as prompted to test the machine
+The file data structure path is hard coded into sim.py. So, it should load that in and prompt you for unary input.
