@@ -1,0 +1,1 @@
+Derivation_1 and 2 are examples for deriving the output for inputs of 11 and 111 in this grammar respectively. test_grammar.py is the script used to generate these derivations. This script was just something I used to test the grammar since generating valid strings can be a bit cumbersome. Feel free to run the script to see derivations with different inputs! 
