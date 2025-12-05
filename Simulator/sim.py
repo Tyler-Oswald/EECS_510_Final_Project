@@ -24,15 +24,23 @@ def load_tm(filename):
                 accepting_state = line.split(":", 1)[1].strip()
             #Case for the transitions 
             elif line.startswith("Transitions:"):
+                #Remove lable 
                 line = line.split(":", 1)[1].strip()
+                #Split each transition into different strings 
                 trans_strings = line.split()
+                #Process the transitions 
                 for tr_str in trans_strings:
+                    #Remove the parentheses from the transition
                     tr_str = tr_str.strip("()")
+                    #Break the transition into parts 
                     parts = [p.strip() for p in tr_str.strip("()").split(",")]
                     parts = [str(p) for p in parts]
+                    #If the there are not 8 parts for each transition, something is wrong 
                     if len(parts) != 8:
                         raise ValueError(f"Invalid transition: {tr_str}")
+                    #Get the transition data from the parts 
                     src, r1, r2, nxt, w1, w2, mv1, mv2 = parts
+                    #Map each state to transitions using dictionary 
                     if src not in transitions:
                         transitions[src] = []
                     transitions[src].append((r1, r2, nxt, w1, w2, mv1, mv2))
