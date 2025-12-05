@@ -1,4 +1,4 @@
-from turing import state, Turing
+from Simulator.turing import state, Turing
 
 def load_tm(filename):
     transitions = {}
