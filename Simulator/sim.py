@@ -36,7 +36,7 @@ def load_tm(filename):
     return states, start_state, accepting_state
 
 def main():
-    filename = input("Enter TM filename: ").strip()
+    filename = "data_structure.txt"
     while(True):
         tape_input = input("Enter initial tape1 input string or (q)uit: ").strip()
         if tape_input == 'q':
