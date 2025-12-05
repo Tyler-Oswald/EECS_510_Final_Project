@@ -10,7 +10,7 @@ This project is organized into four main folders:
 
 - **Project_description**  
   Contains a PDF with the full written description of the project.
-  NOTE: Both the grammar and the machine can be found in the project description PDF Additionally the description of the data structure is in this document as well.
+  NOTE: Both the grammar and the machine can be found in the project description PDF. Additionally, the description of the data structure is in this document as well.
 
 - **Simulator**  
   Contains the Python code used to simulate the two-tape Turing machine, along with the file-based data structure used by the simulator. 
