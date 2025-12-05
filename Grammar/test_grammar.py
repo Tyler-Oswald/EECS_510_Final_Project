@@ -13,7 +13,7 @@ rules = [
 def is_terminal(s):
     return all(c == "1" for c in s)
 
-def derive_to_terminal(s, max_steps=1000):
+def derive(s, max_steps=1000):
     derivation = [s]
     step = 0
 
@@ -41,7 +41,7 @@ user_input = input("Enter input: ")
 input_string += user_input
 input_string += "D"
 print("Starting input:", input_string)
-derivation_sequence = derive_to_terminal(input_string)
+derivation_sequence = derive(input_string)
 
 print("\nOutput:", derivation_sequence[-1])
 print(f'In decimal: ', len(derivation_sequence[-1]))
