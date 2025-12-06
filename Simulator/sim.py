@@ -55,7 +55,16 @@ def main():
     #Main loop
     while(True):
         #Ask the user for initial input 
+        bad = False
         tape_input = input("Enter initial tape1 input string or (q)uit: ").strip()
+        #We reserved 0 for blanks in the simulator, so we can't take in input strings that contain 0s
+        for i in tape_input:
+            if i == '0':
+                print("Can't input zeros. This symbol is reserved for blanks in the simulator.")
+                bad =True
+                break
+        if bad:
+            continue
         #Exit condition 
         if tape_input == 'q':
             break
